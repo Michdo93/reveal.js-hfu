@@ -31,7 +31,7 @@
     "eslint": "^8.57.1",
     "less": "^4.2.1",
     "postcss": "^8.4.49",
-    "rollup": "^2.79.2",
+    "rollup": "^4.63.5",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-scss": "^3.0.0",
