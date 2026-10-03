@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/hschne/reveal.js-starter#readme",
   "dependencies": {
-    "reveal.js": "^5.1.0"
+    "reveal.js": "^6.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
