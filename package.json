@@ -30,7 +30,7 @@
     "browser-sync": "^3.0.3",
     "eslint": "^8.57.1",
     "less": "^4.2.1",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.28",
     "rollup": "^2.79.2",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-postcss": "^4.0.2",
