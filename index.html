@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+
+    <script src="js/config.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+
+    <!-- Custom styling and tweaks -->
+    <link rel="stylesheet" href="out/revealjs-starter.css" />
+
+    <script src="js/reveal.js"></script>
+    <!-- Plugins -->
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="css/hfu.css" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!--
+Tabelle Head 707173 oder 00894D Poppins 18 weiß
+Zeile A D5D5D5 Poppins 17 schwarz
+Zeile B EBEBEB
+Zelle / Zeile C 00894D Poppins SemiBold 17
+
+Einfache Tabelle
+Zeile A EAEAEA Poppins 20
+Zeile B F5F5F5
+
+Einfache Tabelle mit Head
+00894D Poppins SemiBold 20 in Bold oder Poppins Semibold nicht bold
+
+Diagrammtitel Poppins SemiBold 30 00894D
+Datenreihe 1 C5C5C5
+Datenreihe 2 00894D
+Datenreihe 3 00CC7E
+Kategorie und Datenreihe in der Legende Poppins 11 allerdings schwarz
+
+Beschriftung Tortendiagramm Poppins SemiBold 18 weiß
+Überschrift Tortendiagramm Poppins 32 schwarz
+Datum Statistik Poppins 18 schwarz
+        -->
+            <section class="titelfolie">
+                <p class="titelfolie-untertitel">Version 1, 24.6.2025</p>
+                <h1>
+                    Vorlage für HFU Präsentationen
+                </h1>
+                <p class="black-forest-university"></p>
+            </section>
+
+            <section class="titelfolie-alternativ">
+                <p class="titelfolie-alternativ-untertitel">Version 1, 24.6.2025</p>
+                <h1>
+                    Vorlage für HFU Präsentationen
+                </h1>
+                <p class="die-beste-zeit"></p>
+            </section>
+
+            <section class="schlussfolie">
+                <h1>
+                    SchlussfolieSchlussfolieSch
+                </h1>
+                <p class="schlussfolie-untertitel">Untertitel</p>
+            </section>
+
+            <section class="schlussfolie-alternativ">
+                <h1>
+                    SchlussfolieSchlussfolieSch
+                </h1>
+                <p class="schlussfolie-alternativ-untertitel">Untertitel</p>
+                <p class="die-beste-zeit"></p>
+            </section>
+
+            <section class="kapitel">
+                <h2>
+                    1.
+                </h2>
+                <p class="kapitel-untertitel">Untertitel</p>
+                <h1>
+                    Kapitel
+                </h1>
+            </section>
+
+            <section class="kapitel-alternativ">
+                <h2>
+                    1.
+                </h2>
+                <p class="kapitel-alternativ-untertitel">Untertitel</p>
+                <h1>
+                    Kapitel
+                </h1>
+            </section>
+
+            <section class="video">
+                <video controls>
+                    <source src="movie.mp4" type="video/mp4">
+
+                    <source src="movie.ogg" type="video/ogg">
+
+                    <source src="movie.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section class="audio">
+                <audio controls>
+                    <source src="test.ogg" type="audio/ogg">
+                    <source src="test.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+
+            <section class="titel-inhalt">
+                <h1 class="titel">Titel</h1>
+                <div class="inhalt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita sit cum incidunt
+                    ullam doloribus neque consequuntur ducimus, autem eum! Eveniet sunt ipsa a voluptas libero
+                    consequuntur quod animi. Reprehenderit, sint!</div>
+            </section>
+
+            <section class="titel-inhalt">
+                <h1 class="titel">Unordered list</h1>
+                <div class="inhalt">
+                    <ul>
+                        <li class="level-1">Ebene 1: 24pt Poppins</li>
+                        <li class="level-2">Ebene 2: 20pt Poppins
+                            <ul>
+                                <li class="level-3">Ebene 3: 20pt Poppins, eingerückt</li>
+                                <li class="level-4">Ebene 4: 24pt Poppins Semibold
+                                    <ul>
+                                        <li class="level-5">Ebene 5: 20pt Poppins Semibold</li>
+                                        <li class="level-6">Ebene 6: 16pt Poppins
+                                            <ul>
+                                                <li class="level-7">Ebene 7: 16pt Poppins, eingerückt</li>
+                                                <li class="level-8">Ebene 8: 16pt Poppins, 2x eingerückt Semibold
+                                                    <ul>
+                                                        <li class="level-9">Ebene 9: 16pt Poppins, 2x eingerückt</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="titel-inhalt">
+                <h1 class="titel">Ordered list</h1>
+                <div class="inhalt">
+                    <ol>
+                        <li>Ebene 1: 24pt Poppins</li>
+                        <li>Ebene 2: 24pt Poppins</li>
+                        <li>Ebene 3: 24pt Poppins</li>
+                        <li>Ebene 4: 24pt Poppins</li>
+                        <li>Ebene 5: 24pt Poppins</li>
+                        <li>Ebene 6: 24pt Poppins</li>
+                        <li>Ebene 7: 24pt Poppins</li>
+                        <li>Ebene 8: 24pt Poppins</li>
+                        <li>Ebene 9: 24pt Poppins</li>
+                        <li>...</li>
+                    </ol>
+            </section>
+
+            <section class="inhalt-ohne-titel">
+                <div class="inhalt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita sit cum incidunt
+                    ullam doloribus neque consequuntur ducimus, autem eum! Eveniet sunt ipsa a voluptas libero
+                    consequuntur quod animi. Reprehenderit, sint!</div>
+            </section>
+
+            <section class="inhalt-ohne-titel">
+                <div class="inhalt">
+                    <ul>
+                        <li class="level-1">Ebene 1: 24pt Poppins</li>
+                        <li class="level-2">Ebene 2: 20pt Poppins
+                            <ul>
+                                <li class="level-3">Ebene 3: 20pt Poppins, eingerückt</li>
+                                <li class="level-4">Ebene 4: 24pt Poppins Semibold
+                                    <ul>
+                                        <li class="level-5">Ebene 5: 20pt Poppins Semibold</li>
+                                        <li class="level-6">Ebene 6: 16pt Poppins
+                                            <ul>
+                                                <li class="level-7">Ebene 7: 16pt Poppins, eingerückt</li>
+                                                <li class="level-8">Ebene 8: 16pt Poppins, 2x eingerückt Semibold
+                                                    <ul>
+                                                        <li class="level-9">Ebene 9: 16pt Poppins, 2x eingerückt</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="inhalt-ohne-titel">
+                <div class="inhalt">
+                    <ol>
+                        <li>Ebene 1: 24pt Poppins</li>
+                        <li>Ebene 2: 24pt Poppins</li>
+                        <li>Ebene 3: 24pt Poppins</li>
+                        <li>Ebene 4: 24pt Poppins</li>
+                        <li>Ebene 5: 24pt Poppins</li>
+                        <li>Ebene 6: 24pt Poppins</li>
+                        <li>Ebene 7: 24pt Poppins</li>
+                        <li>Ebene 8: 24pt Poppins</li>
+                        <li>Ebene 9: 24pt Poppins</li>
+                        <li>...</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="titel-ohne-inhalt">
+                <h1 class="titel">Titel</h1>
+            </section>
+
+            <section class="leer"></section>
+
+            <section class="zwei-spalten">
+                <h1 class="titel">Folienüberschriftsss</h1>
+                <div class="spalte1">
+                    <p class="zwei-spalten-untertitel">Untertitel</p>
+                    <p class="spalte1-inhalt">Text</p>
+                </div>
+                <div class="spalte2">
+                    <p class="spalte2-inhalt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                        voluptatibus eum, commodi totam pariatur incidunt magnam odit dolore quae accusantium temporibus
+                        magni, consectetur vitae nesciunt doloremque quisquam iste laborum blanditiis!</p>
+                </div>
+            </section>
+
+            <section class="bild-titel-inhalt">
+                <figure class="bild-container">
+                    <img class="bild">
+                    <figcaption class="bildunterschrift">Bildunterschrift</figcaption>
+                </figure>
+                <h1 class="titel"></h1>
+                <div class="inhalt"></div>
+            </section>
+
+        </div>
+    </div>
+    <script>
+        Reveal.configure({
+            keyboard: {
+                40: "next",
+                38: "prev",
+            },
+        });
+        Reveal.initialize({
+            width: 1920,
+            height: 1200,
+            minScale: 1,
+            maxScale: 1,
+            center: false,
+            hash: true,
+            transition: "none",
+            history: "true",
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Die Variablen, die Sie dynamisch übergeben möchten
+            const currentName = "Michael Dörflinger"; // ⬅️ Variable 1: Der Name
+            const currentLocale = "de-DE";           // ⬅️ Variable 2: Das Format ('de-DE' für DE oder 'en-US' für EN)
+
+            // Aufruf der Funktion mit den Variablen
+            setDynamicHeader(currentName, currentLocale);
+        });
+
+        function updatePtFactor() {
+            const baseFactor = 2.0;
+            const factor = baseFactor / window.devicePixelRatio;
+            document.documentElement.style.setProperty('--pt-factor', factor);
+        }
+
+        updatePtFactor();
+        window.addEventListener('resize', updatePtFactor);
+        /*
+        function updatePtFactor() {
+            const factor = 1.5625 / window.devicePixelRatio; // kleiner bei hohem Zoom, größer bei niedrigem
+            document.documentElement.style.setProperty('--pt-factor', factor);
+        }
+
+        updatePtFactor();
+        window.addEventListener('resize', updatePtFactor);
+        
+
+        const baseFactor = 2.0;
+        const factor = baseFactor / window.devicePixelRatio;
+
+        [24, 30, 60, 130].forEach(pt => {
+            document.querySelectorAll(`.pt${pt}`).forEach(el => {
+                el.style.fontSize = `${pt * factor}px`;
+            });
+        });
+
+        document.getElementById("test").style.marginTop = `${10 * factor}px`;
+        element.style.paddingLeft = `${10 * factor}px`;
+        element.style.borderRadius = `${4 * factor}px`;
+        */
+    </script>
+</body>
+
+</html>

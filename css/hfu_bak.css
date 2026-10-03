@@ -1,0 +1,552 @@
+:root {
+    --pt-factor: 2.0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none !important;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff'),
+        url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.reveal,
+.reveal .slides > section {
+    font-size: inherit !important;
+    color: inherit !important;
+    text-align: left !important;
+    font-family: inherit !important;
+}
+
+.reveal .slides > section {
+    inset: 0 !important;
+    font-size: inherit !important;
+    transform: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    margin-left: calc(-18px * var(--pt-factor)) !important;
+}
+
+.reveal .controls button,
+.reveal .controls button:before {
+    color: var(--r-link-color) !important;
+}
+
+.reveal .controls button.enabled:hover {
+    color: var(--r-link-color-hover) !important;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(24px * var(--pt-factor)) !important;
+}
+
+.titelfolie,
+.titelfolie-alternativ {
+    box-sizing: border-box;
+}
+
+.titelfolie {
+    background: linear-gradient(315deg, #00CC7E 7%, #00663F 75%);
+}
+
+.titelfolie-alternativ {
+    background: white !important;
+}
+
+.titelfolie-untertitel,
+.titelfolie-alternativ-untertitel {
+    position: absolute;
+    left: calc(88px * var(--pt-factor));   /* Horizontale Position */
+    top: calc(139px * var(--pt-factor));   /* Vertikale Position */
+    width: calc(766px * var(--pt-factor));
+    height: calc(51px * var(--pt-factor));
+    padding-left: calc(9.5px * var(--pt-factor));
+    padding-right: calc(9.5px * var(--pt-factor));
+    padding-top: calc(5px * var(--pt-factor));
+    padding-bottom: calc(5px * var(--pt-factor));
+    box-sizing: border-box; /* WICHTIG: Padding wird in Breite eingerechnet */
+    display: block;
+    text-transform: none !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important; /* Text in Form umbrechen */
+    margin: 0;
+}
+
+.titelfolie-untertitel,
+.black-forest-university,
+.die-beste-zeit,
+.titelfolie-alternativ-untertitel {
+    padding: 0;
+    text-transform: none !important;
+}
+
+.black-forest-university {
+    position: absolute;
+    left: calc(585px * var(--pt-factor));
+    top: calc(657px * var(--pt-factor));
+    width: calc(621px * var(--pt-factor));
+    height: calc(48px * var(--pt-factor));
+    padding: calc(5px * var(--pt-factor)) calc(9.5px * var(--pt-factor));
+    box-sizing: border-box;
+    font-size: 0;
+    color: transparent;
+    overflow: visible;
+}
+
+.black-forest-university::before {
+    content: "The Black Forest University.";
+    display: block;
+    font-size: calc(38.5px * var(--pt-factor));
+    color: black; /* Oder deine gewünschte Farbe */
+    line-height: 1.2;
+    text-transform: none !important;
+    white-space: nowrap;
+}
+
+.die-beste-zeit {
+    padding-top: calc(400px * var(--pt-factor));
+    font-size: 0;
+    color: transparent;
+}
+
+.titelfolie-alternativ .die-beste-zeit::before {
+    content: "Die beste Zeit.";
+    display: block;
+    font-size: calc(24px * var(--pt-factor));
+    color: #707173;
+}
+
+.schlussfolie-alternativ .die-beste-zeit::before {
+    content: "Die beste Zeit.";
+    display: block;
+    font-size: calc(24px * var(--pt-factor));
+    color: white;
+}
+
+.schlussfolie,
+.schlussfolie-alternativ {
+    box-sizing: border-box;
+}
+
+.schlussfolie {
+    background: radial-gradient(circle at center, #5CFFBF 0%, #007B4C 56%, #003D26 100%);
+}
+
+.schlussfolie-alternativ {
+    background: transparent url('../img/schlussfolie.png') no-repeat center / cover;
+}
+
+section.schlussfolie::after,
+section.schlussfolie-alternativ::after {
+    display: block;
+    background-image: url('../img/master_logo1.png');
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: calc(-20px * var(--pt-factor));
+    height: calc(-20px * var(--pt-factor));
+    position: absolute;
+    top: calc(120px * var(--pt-factor));
+    right: calc(-70px * var(--pt-factor));
+}
+
+.schlussfolie h1,
+.schlussfolie-alternativ h1 {
+    color: white;
+    font-weight: 600;
+    font-size: calc(35px * var(--pt-factor));
+    padding: 0;
+    padding-top: calc(290px * var(--pt-factor));
+    text-transform: none !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    width: calc(431.25px * var(--pt-factor));
+    max-width: calc(431.25px * var(--pt-factor));
+}
+
+.schlussfolie-untertitel,
+.schlussfolie-alternativ-untertitel,
+.schlussfolie-alternativ .die-beste-zeit {
+    padding: 0;
+    text-transform: none !important;
+}
+
+.schlussfolie-untertitel {
+    padding-top: calc(45px * var(--pt-factor));
+}
+
+.schlussfolie-alternativ-untertitel {
+    padding-top: calc(8px * var(--pt-factor));
+}
+
+.schlussfolie-alternativ .die-beste-zeit {
+    padding-top: calc(400px * var(--pt-factor)) !important;
+    margin-left: calc(1260px * var(--pt-factor)) !important;
+    width: 100%
+}
+
+.video,
+.audio {
+    background: white !important;
+    box-sizing: border-box;
+}
+
+.video video,
+.audio audio {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+.kapitel {
+    background: linear-gradient(315deg, #00CC7E 7%, #00663F 75%);
+    box-sizing: border-box;
+}
+
+section.kapitel::before {
+    content: "";
+    display: block;
+    background-image: url('../img/hfu-master1.png');
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+    height: calc(400px * var(--pt-factor));
+    width: auto;
+    aspect-ratio: 6 / 5;
+    position: absolute;
+    bottom: calc(80px * var(--pt-factor));
+    right: calc(-60px * var(--pt-factor));
+    z-index: -1;
+}
+
+.kapitel-untertitel {
+    padding: 0;
+    padding-top: calc(90px * var(--pt-factor));
+    width: 100%;
+    text-transform: none !important;
+}
+
+.kapitel-alternativ {
+    background: white !important;
+    box-sizing: border-box;
+}
+
+.kapitel h1,
+.kapitel-alternativ h1 {
+    font-weight: 600;
+    font-size: calc(60px * var(--pt-factor));
+    padding: 0;
+    padding-top: 0;
+    text-transform: none !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    width: 100%;
+    max-width: calc(575px * var(--pt-factor));
+}
+
+.kapitel h2,
+.kapitel-alternativ h2 {
+    font-weight: 400;
+    font-size: calc(130px * var(--pt-factor));
+    padding: 0;
+    padding-top: calc(25px * var(--pt-factor));
+    text-transform: none !important;
+    white-space: normal !important;
+    width: calc(320px * var(--pt-factor));
+    max-width: calc(57.5px * var(--pt-factor));;
+}
+
+.kapitel h1,
+.kapitel h2 {
+    color: white !important;
+}
+
+.kapitel-alternativ h1,
+.kapitel-alternativ h2 {
+    color: #00894D !important;
+}
+
+.kapitel-alternativ-untertitel {
+    padding: 0;
+    padding-top: calc(120px * var(--pt-factor));
+    text-transform: none !important;
+}
+
+.leer,
+.titel-inhalt,
+.inhalt-ohne-titel,
+.titel-ohne-inhalt,
+.zwei-spalten,
+.bild-titel-inhalt {
+    background: white !important;
+}
+
+.leer {
+    width: 100%;
+    height: 100%;
+    color: black !important;
+    font: 400 calc(24px * var(--pt-factor))/1.2 "Poppins", sans-serif;
+}
+
+.titel {
+    padding-top: calc(14% * var(--pt-factor));
+    padding-left: 147px;
+    color: #00894D !important;
+    font-weight: 600;
+    letter-spacing: calc(0.04em * var(--pt-factor)) !important;
+    font-size: calc(30px * var(--pt-factor)) !important;
+    line-height: 0.9 !important;
+}
+
+.inhalt,
+ul,
+ol {
+    margin-top: calc(150px * var(--pt-factor));
+    color: black !important;
+    font-weight: 400 !important;
+    font-size: calc(24px * var(--pt-factor)) !important;
+    width: 100% !important;
+    text-transform: none !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    width: 100%;
+    max-width: calc(770px * var(--pt-factor));
+}
+
+.inhalt-ohne-titel div {
+    padding-top: calc(50px * var(--pt-factor));
+    background: transparent !important;
+}
+
+section.titelfolie::before,
+section.titelfolie-alternativ::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+    height: calc(400px * var(--pt-factor));
+    width: auto;
+    aspect-ratio: 6 / 5;
+    position: absolute;
+    bottom: 120px;
+    right: 170px;
+    z-index: -1;
+    background-image: var(--hfu-master-img);
+}
+
+section.titelfolie::after,
+section.titelfolie-alternativ::after {
+    content: "";
+    display: block;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: calc(410px * var(--pt-factor));
+    height: calc(410px * var(--pt-factor));
+    position: absolute;
+    top: calc(160px * var(--pt-factor));
+    right: calc(-120px * var(--pt-factor));
+    background-image: var(--master-logo-img);
+}
+
+.titelfolie,
+.titelfolie-alternativ {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.titelfolie {
+    --hfu-master-img: url('../img/hfu-master1.png');
+    --master-logo-img: url('../img/master_logo1.png');
+}
+
+.titelfolie-alternativ {
+    --hfu-master-img: url('../img/hfu-master2.png');
+    --master-logo-img: url('../img/master_logo2.png');
+}
+
+.titelfolie h1,
+.titelfolie-alternativ h1 {
+    position: absolute;
+    left: calc(88px * var(--pt-factor));
+    top: calc(205px * var(--pt-factor));
+    width: calc(575px * var(--pt-factor));
+    min-height: calc(204px * var(--pt-factor));
+    padding-left: calc(9.5px * var(--pt-factor));   /* 0,25 cm */
+    padding-right: calc(9.5px * var(--pt-factor));  /* 0,25 cm */
+    padding-top: calc(5px * var(--pt-factor));      /* 0,13 cm */
+    padding-bottom: calc(5px * var(--pt-factor));   /* 0,13 cm */
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 600;
+    font-size: calc(60px * var(--pt-factor));
+    text-transform: none !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+}
+
+.titelfolie h1 {
+    color: white;
+}
+
+.titelfolie-alternativ h1 {
+    color: #00894D !important;
+}
+
+.titelfolie p,
+.schlussfolie p,
+.kapitel p,
+.schlussfolie-alternativ p {
+    color: white;
+}
+
+.titelfolie-alternativ p,
+.kapitel-alternativ p {
+    color: #707173;
+}
+
+.slide-background.titelfolie::before,
+.slide-background.titelfolie::after,
+.slide-background.titelfolie-alternativ::before,
+.slide-background.titelfolie-alternativ::after,
+.slide-background.schlussfolie::before,
+.slide-background.schlussfolie::after,
+.slide-background.schlussfolie-alternativ::before,
+.slide-background.schlussfolie-alternativ::after,
+.slide-background.kapitel::before,
+.slide-background.kapitel::after,
+.slide-background.kapitel-alternativ::before,
+.slide-background.kapitel-alternativ::after,
+.slide-background.titel-inhalt::before,
+.slide-background.titel-inhalt::after,
+.slide-background.inhalt-ohne-titel::before,
+.slide-background.inhalt-ohne-titel::after,
+.slide-background.titel-ohne-inhalt::before,
+.slide-background.titel-ohne-inhalt::after,
+.slide-background.zwei-spalten::before,
+.slide-background.zwei-spalten::after,
+.slide-background.bild-titel-inhalt::before,
+.slide-background.bild-titel-inhalt::after {
+    content: none;
+    background-image: none;
+}
+
+section.titel-inhalt::before,
+section.inhalt-ohne-titel::before,
+section.titel-ohne-inhalt::before,
+section.zwei-spalten::before,
+section.bild-titel-inhalt::before {
+    content: var(--header-text);
+    display: block;
+    position: absolute;
+    top: calc(130px * var(--pt-factor));
+    right: calc(-40px * var(--pt-factor));
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(11px * var(--pt-factor));
+    color: #C5C5C5;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: right;
+}
+
+section.titel-inhalt::after,
+section.inhalt-ohne-titel::after,
+section.titel-ohne-inhalt::after,
+section.zwei-spalten::after,
+section.bild-titel-inhalt::after {
+    content: "";
+    display: block !important;
+    background-image: url('../img/logo_klein.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: calc(100px * var(--pt-factor));
+    height: calc(100px * var(--pt-factor));
+    position: absolute;
+    top: calc(130px * var(--pt-factor));
+    right: calc(-180px * var(--pt-factor));
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+ol li {
+    font-size: calc(24px * var(--pt-factor));
+    font-weight: 400;
+}
+
+.level-1 {
+    font-size: calc(24px * var(--pt-factor));
+    font-weight: 400;
+}
+
+.level-2 {
+    font-size: calc(20px * var(--pt-factor));
+    font-weight: 400;
+    margin-left: -5px;
+    padding-left: 5px;
+}
+
+.level-3 {
+    font-size: calc(20px * var(--pt-factor));
+    font-weight: 400;
+    padding-left: 0;
+}
+
+.level-4 {
+    font-size: calc(24px * var(--pt-factor));
+    font-weight: 600;
+    margin-left: -80px;
+    padding-left: -30px;
+}
+
+.level-5 {
+    font-size: calc(20px * var(--pt-factor));
+    font-weight: 600;
+    margin-left: -90px;
+    padding-left: 10px;
+}
+
+.level-6 {
+    font-size: calc(16px * var(--pt-factor));
+    font-weight: 400;
+    margin-left: -100px;
+    padding-left: 20px;
+}
+
+.level-7 {
+    font-size: calc(16px * var(--pt-factor));
+    font-weight: 400;
+    padding-left: 0;
+}
+
+.level-8 {
+    font-size: calc(16px * var(--pt-factor));
+    font-weight: 600;
+    padding-left: 0;
+}
+
+.level-9 {
+    font-size: calc(16px * var(--pt-factor));
+    font-weight: 400;
+    padding-left: 0;
+}

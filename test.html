@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <title>CodePen Demo</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/pen/">
+
+  
+  
+
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6d8bf8b4b479137260842506acbb12717dace0823c023e08b96360e60b0840d9.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+  <div class="rr-container">
+  <div class="client">Python Client</div>
+  <div class="server">openHAB REST API</div>
+  
+  <div class="request-arrow"></div>
+  <div class="response-arrow"></div>
+
+  <div class="request-packet">GET /items/TemperatureSensor/state<br>{}</div>
+  <div class="response-packet">{ "state": "22.5" }</div>
+</div>
+
+<style>
+.rr-container { position: relative; height: 550px; margin-top: 50px; }
+.client, .server {
+  position: absolute; top: 25px; width: 120px; height: 500px;
+  background-color: #f2f2f2; border: 2px solid #333; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 28px;
+}
+.client { left: 25px; } .server { right: 25px; }
+
+.request-arrow, .response-arrow {
+  position: absolute; left: 145px; right: 145px; height: 0; border-top: 2px solid #000;
+}
+.request-arrow { top: 40px; }
+.response-arrow { top: 425px; border-top: none; border-bottom: 2px solid #000; }
+
+.request-packet, .response-packet {
+  position: absolute; width: 350px; height: 120px; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center; font-family: monospace;
+  text-align: center; font-size: 20px;
+}
+.request-packet { background-color: #4da6ff; color: white; top: 20px; left: 50px; opacity: 0; }
+.response-packet { background-color: #33cc33; color: white; top: 425px; right: 50px; opacity: 0; }
+
+/* Keyframes */
+@keyframes moveRequest {
+  0% { left: 50px; opacity: 1; }
+  100% { left: calc(100% - 210px); opacity: 1; }
+}
+
+@keyframes moveResponse {
+  0% { right: 50px; opacity: 1; }
+  100% { right: calc(100% - 210px); opacity: 1; }
+}
+</style>
+
+<script>
+const request = document.querySelector('.request-packet');
+const response = document.querySelector('.response-packet');
+
+const totalRequests = 20;
+
+let count = 0;
+
+function startCycle() {
+  if (count >= totalRequests) return;
+
+  // Request Animation
+  request.style.animation = "moveRequest 2s linear forwards";
+  request.style.opacity = 1;
+
+  request.addEventListener('animationend', function onRequestEnd() {
+    request.style.opacity = 0; // Request verschwindet
+    request.style.animation = ""; // reset
+    request.removeEventListener('animationend', onRequestEnd);
+
+    // Response Animation starten
+    response.style.animation = "moveResponse 2s linear forwards";
+    response.style.opacity = 1;
+
+    response.addEventListener('animationend', function onResponseEnd() {
+      response.style.opacity = 0;
+      response.style.animation = "";
+      response.removeEventListener('animationend', onResponseEnd);
+
+      count++;
+      setTimeout(startCycle, 300); // kleiner Delay vor nächstem Request
+    });
+  });
+}
+
+startCycle();
+</script>
+  
+  
+</body>
+
+</html>
